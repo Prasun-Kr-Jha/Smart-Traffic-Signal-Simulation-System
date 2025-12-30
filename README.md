@@ -1,6 +1,7 @@
-🚦 Smart Traffic Signal Simulation System
+🚦 Smart Traffic Signal Simulation System!
 Explainable AI vs Traditional Traffic Control
-📌 Overview
+
+- Overview -
 
 This project demonstrates why an AI-based traffic signal controller is more efficient than a traditional fixed-time traffic light, using a real-time simulation with clear visual comparison and explainable decisions.
 
@@ -192,16 +193,17 @@ Real-world traffic datasets
 
 These are considered future extensions.
 
-🚀 How to Run
+How to Run :
 pip install -r requirements.txt
 streamlit run app.py
 
 🧾 Credits
 
 Developed by Prasun
+
 Smart Traffic Signal Simulation System
 
-🏁 Final Note
+--Final Note--
 
 This project shows how adaptive, explainable AI can outperform traditional infrastructure logic — not by being complex, but by being responsive to real conditions.
 
