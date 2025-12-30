@@ -193,6 +193,10 @@ Real-world traffic datasets
 
 These are considered future extensions.
 
+🚀 Live Demo
+
+🔗 https://smart-traffic-signal-simulation-system-5tzjjyrekukzbmg5owpsy3.streamlit.app/
+
 How to Run :
 pip install -r requirements.txt
 streamlit run app.py
