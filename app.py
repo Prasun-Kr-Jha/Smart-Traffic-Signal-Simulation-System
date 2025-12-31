@@ -6,7 +6,7 @@ import pandas as pd
 import altair as alt
 
 # ==========================================
-# 1. SESSION STATE & DYNAMIC SIDEBAR UX
+# 1. SESSION STATE
 # ==========================================
 # We initialize state before page config to determine sidebar behavior
 if 'sim_running' not in st.session_state:
@@ -22,9 +22,9 @@ st.set_page_config(
     initial_sidebar_state=initial_sidebar
 )
 
-# ==========================================
-# 2. THEME & CSS (GEMINI DARK - STRICT)
-# ==========================================
+
+# 2. THEME & CSS 
+
 BG_MAIN = "#0E1117"
 BG_SIDEBAR = "#161B22"
 BG_CARD = "#1F2937"
@@ -105,9 +105,9 @@ st.markdown(f"""
 </style>
 """, unsafe_allow_html=True)
 
-# ==========================================
-# 3. TRAFFIC LOGIC CORE (UNCHANGED)
-# ==========================================
+
+# 3. TRAFFIC LOGIC CORE 
+
 
 class TrafficEnv:
     def __init__(self):
@@ -151,9 +151,9 @@ def generate_decision_insight(action_idx, queues, is_emergency, emergency_lane):
         "icon": "🤖"
     }
 
-# ==========================================
+
 # 4. SIDEBAR CONTROLS
-# ==========================================
+
 with st.sidebar:
     st.title("🎛️ Control Panel")
     st.markdown("---")
@@ -176,9 +176,9 @@ with st.sidebar:
         }
         st.rerun()
 
-# ==========================================
+
 # 5. MAIN DASHBOARD
-# ==========================================
+
 
 st.title("Smart Traffic Signal Simulation")
 st.markdown(f"<div style='color:{TEXT_SECONDARY}; margin-bottom: 20px;'>Comparing <b>Traditional Fixed-Time Signals</b> vs. <b>Adaptive AI Control</b>.</div>", unsafe_allow_html=True)
@@ -216,9 +216,9 @@ with c3:
     </div>
     """, unsafe_allow_html=True)
 
-# ==========================================
+
 # 6. SIMULATION EXECUTION
-# ==========================================
+
 
 if st.session_state.sim_running:
     
